@@ -1,0 +1,8 @@
+div>input
+{
+  border:1px solid green;
+  height:35px;
+  width:160px;
+  text-align: left;
+  border-radius: 3px;
+}
