@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import {HttpClientModule} from '@angular/common/http';
 import { MembersComponent } from './members/members.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
+  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, MembersComponent ],
   bootstrap:    [ AppComponent ]
 })
