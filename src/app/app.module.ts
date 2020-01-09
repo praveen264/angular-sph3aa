@@ -8,10 +8,11 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import { MembersComponent } from './members/members.component';
-
+import {AuthGuard} from './auth.guard';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
+  providers:[AuthGuard],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, MembersComponent ],
   bootstrap:    [ AppComponent ]
 })

@@ -17,13 +17,13 @@
     <th>JOIN DATE</th>
     <th colspan="2">STATUS</th>
   </tr>
-  <tr>
-    <td>STSHCH</td>
-    <td>Jane Doe</td>
+  <tr *ngFor="let data of datas">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
     <td></td>
     <td >
      <p class="active_button"> Active</p>
     </td>
-    <td> edit</td>
+    <td> <a href="#">edit</a>|<a href="#">delete</a></td>
     </tr>
 </table>
