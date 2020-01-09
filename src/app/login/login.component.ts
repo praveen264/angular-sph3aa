@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
      if(u1=='praveen264' && p1=='123456')
      {
        this.routes.navigate(['/members']);
+       localStorage.setItem("username",u1);
      }
    }
 }
