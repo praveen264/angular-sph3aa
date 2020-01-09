@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
    check(u1,p1)
    {
     //  alert(u1+"<br>"+p1);
-     if(u1=='praveen264' && p1=='123456')
+     if(u1=='praveen264' && p1=='pramod@12345')
      {
        this.routes.navigate(['/members']);
        localStorage.setItem("username",u1);
