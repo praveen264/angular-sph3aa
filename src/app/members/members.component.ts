@@ -14,10 +14,10 @@ export class MembersComponent implements OnInit {
   ];
 
   ngOnInit() {
-  if(localStorage.getItem('username')=='')
-  {
-    this.router.navigate(['/login']);
-  }
+      if(!localStorage.getItem('username'))
+      {
+        this.router.navigate(['/login']);
+      }
   }
   
 }
