@@ -1,4 +1,4 @@
 {
-  "baseUrl": "https://jsonplaceholder.typicode.com/",
-  "baseUrl2": "https://reqres.in/api/users"
+  "id": "https://jsonplaceholder.typicode.com/",
+  "name": "https://reqres.in/api/users"
 }
