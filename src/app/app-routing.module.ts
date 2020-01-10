@@ -8,7 +8,7 @@ import {AuthGuard} from './auth.guard';
 const routes: Routes = [
    {path:'hello',canActivate:[AuthGuard],component:HelloComponent},
    {path:'members',canActivate:[AuthGuard],component:MembersComponent},
-   {path:'logout',component:LogoutComponent},
+   {path:'logout',component:LoginComponent},
    {path:'',component:LoginComponent},
 ];
 
