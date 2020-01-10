@@ -13,11 +13,14 @@ export class LoginComponent implements OnInit {
   }
    check(u1,p1)
    {
+     if( localStorage.getItem("username")==null)
+     {
     //  alert(u1+"<br>"+p1);
      if(u1=='praveen264' && p1=='pramod@12345')
      {
        this.routes.navigate(['/members']);
        localStorage.setItem("username",u1);
+     }
      }
    }
 }

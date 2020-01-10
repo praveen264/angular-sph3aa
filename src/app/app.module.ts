@@ -10,11 +10,12 @@ import {HttpClientModule} from '@angular/common/http';
 import { MembersComponent } from './members/members.component';
 import {AuthGuard} from './auth.guard';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
   providers:[AuthGuard],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, MembersComponent, LoginComponent ],
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, MembersComponent, LoginComponent, LogoutComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
