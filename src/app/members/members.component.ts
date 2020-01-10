@@ -14,7 +14,7 @@ export class MembersComponent implements OnInit {
   ];
 
   ngOnInit() {
-      if(!localStorage.getItem('username'))
+      if(localStorage.getItem('username')==null)
       {
         this.router.navigate(['/login']);
       }
