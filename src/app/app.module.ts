@@ -11,10 +11,11 @@ import { MembersComponent } from './members/members.component';
 import {AuthGuard} from './auth.guard';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ConfigService } from './config.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
-  providers:[AuthGuard],
+  providers:[AuthGuard, ConfigService],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, MembersComponent, LoginComponent, LogoutComponent ],
   bootstrap:    [ AppComponent ]
 })

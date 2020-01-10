@@ -1,9 +1,10 @@
 import { Component, OnInit,Injector } from '@angular/core';
 import {Router} from '@angular/router';
 import { Injectable } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-@Injectable()
+
 @Component({
   selector: 'app-members',
   templateUrl: './members.component.html',
@@ -11,7 +12,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class MembersComponent implements OnInit {
 
-  constructor(private router:Router,private http:HttpClient) { }
+  constructor(private router:Router,private http:HttpClient,private config: ConfigService) { }
   getdatas:any;
 
 
@@ -24,9 +25,9 @@ export class MembersComponent implements OnInit {
   }
   view()
   {
-    this.http.get('/api/db.json').subscribe(data=>{
-      this.getdatas=data;
-      console.log(this.getdatas);
-    });
+   this.config.getData()
+      .subscribe(data => {
+        console.log(data);
+      });
   }
 }
