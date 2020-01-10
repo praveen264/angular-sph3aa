@@ -1,4 +1,8 @@
-{
+[{
   "id": "https://jsonplaceholder.typicode.com/",
   "name": "https://reqres.in/api/users"
-}
+},
+{
+   "id": "https://jsonplaceholder.typicode.com/",
+  "name": "https://reqres.in/api/users"
+}]

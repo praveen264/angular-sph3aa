@@ -8,6 +8,14 @@ export class ConfigService {
 
   getData() {
     return this.http.get('/assets/db.json');
+    
   }
-
+  postData()
+  {
+     return  this.http.post('/assets/db.json',{id:"hdjhs",name:"kjsdjskdjkdj"})
+      .subscribe((data: any[]) => {
+          console.log(data);
+      });
+  }
+  
 }

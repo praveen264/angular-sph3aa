@@ -25,9 +25,15 @@ export class MembersComponent implements OnInit {
   }
   view()
   {
+   const req={
+    id:"wewewe",
+     name:"swijwjojeii"
+   };
    this.config.getData()
       .subscribe(data => {
         console.log(data);
       });
+ return  this.config.postData();
   }
+
 }
