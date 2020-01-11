@@ -13,8 +13,9 @@
     "core-js": "2.6.11",
     "http": "0.0.0",
     "json-server": "0.15.1",
-    "ngx-auth": "^5.3.0",
+    "ngx-auth": "5.3.0",
     "rxjs": "6.5.4",
+    "rxjs-compat": "^6.5.4",
     "zone.js": "0.9.1"
   },
   "scripts": {

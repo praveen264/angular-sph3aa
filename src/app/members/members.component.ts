@@ -9,9 +9,9 @@ import "rxjs/add/operator/do";
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 export type User = {
-  email: string,
-  password: string,
-  id: number
+ 
+  id: number,
+  name:string
 }
 
 @Component({
@@ -41,15 +41,16 @@ export class MembersComponent implements OnInit {
   
    this.config.getData()
       .subscribe(data => {
-     
+     this.getdatas=data;
      
       console.log(data);
       });
-    
+    return this.http.post('https://angular-sph3aa.stackblitz.io/assets/db.json',req
+).map((data:any[])=>{
+  this.getdatas=data;
+});
    
   }
-  post():Observable<User>{
-
-  }
+ 
 
 }
