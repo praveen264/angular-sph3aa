@@ -2,8 +2,17 @@ import { Component, OnInit,Injector } from '@angular/core';
 import {Router} from '@angular/router';
 import { Injectable } from '@angular/core';
 import { ConfigService } from '../config.service';
+import { Observable } from "rxjs/Observable";
+
+import "rxjs/add/operator/map";
+import "rxjs/add/operator/do";
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+export type User = {
+  email: string,
+  password: string,
+  id: number
+}
 
 @Component({
   selector: 'app-members',
@@ -13,8 +22,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class MembersComponent implements OnInit {
 
   constructor(private router:Router,private http:HttpClient,private config: ConfigService) { }
-  getdatas:any;
-
+  getdatas:string[]='';
+   
 
   ngOnInit() {
       if(localStorage.getItem('username')==null)
@@ -26,14 +35,21 @@ export class MembersComponent implements OnInit {
   view()
   {
    const req={
-    id:"wewewe",
-     name:"swijwjojeii"
+    id:"qwq3qa",
+     name:"pktrivedi"
    };
+  
    this.config.getData()
       .subscribe(data => {
-        console.log(data);
+     
+     
+      console.log(data);
       });
- return  this.config.postData();
+    
+   
+  }
+  post():Observable<User>{
+
   }
 
 }
