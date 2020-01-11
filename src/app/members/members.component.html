@@ -1,5 +1,4 @@
 <app-header></app-header>
- <li style="float:right"><a [routerLink]="['/logout']" > Logout</a></li>
  
 <h1>Members List</h1><br>
 <div>
@@ -23,7 +22,7 @@
   <tr *ngFor="let data of getdatas">
     <td>{{data.id}}</td>
     <td>{{data.name}}</td>
-    <td></td>
+    <td>{{data.joining_date}}</td>
     <td >
      <p class="active_button"> Active</p>
     </td>

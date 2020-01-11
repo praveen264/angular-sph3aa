@@ -1,8 +1,10 @@
 [{
-  "id": "https://jsonplaceholder.typicode.com/",
-  "name": "https://reqres.in/api/users"
+  "id": "qwert",
+  "name": "P.K Trivedi",
+  "joining_date":"1/12/1233"
 },
 {
-   "id": "https://jsonplaceholder.typicode.com/",
-  "name": "https://reqres.in/api/users"
+   "id": "werrrr",
+  "name": "S.k.trivedi",
+   "joining_date":"1/12/1233"
 }]
